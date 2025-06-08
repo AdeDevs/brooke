@@ -1,0 +1,532 @@
+.home-page {
+    width: 100%;
+    box-sizing: border-box;
+    font-family: var(--mainFont);
+}
+
+.home-page .hero {
+    background-image: url(../assets/landing.jpg);
+    background-position: center;
+    background-size: cover;
+    box-sizing: border-box;
+    padding: 100px 30px 80px 30px;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.hero .intro {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+
+.intro .brooke {
+    border: 15px solid #fff;
+    background-image: url(../assets/brooke.jpeg);
+    background-position: center;
+    background-size: cover;
+    height: 340px;
+    width: 250px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.brooke h2 {
+    background-color: #fff;
+    font-weight: 700;
+    padding-top: 15px;
+    font-size: 17px;
+}
+.brooke span {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.hero h1 {
+    color: var(--mainColor);
+    font-size: 10vw;
+    line-height: 90%;
+    text-transform: uppercase;
+    font-weight: 800;
+    text-align: right;
+}
+
+.hero .hero-extra {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 20px;
+    margin-top: 30px;
+    color: #fff;
+}
+.hero-extra p {
+    font-size: 15px;
+    font-weight: 500;
+    text-align: right;
+}
+.hero .hero-socials {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    list-style-type: none;
+}
+.hero-socials li {
+    color: var(--mainColor);
+    background-color: #131e2e;
+    display: flex;
+    padding: 7px;
+    font-size: 20px;
+    box-sizing: border-box;
+    border-radius: 100%;
+}
+
+.hero .sign {
+    background-image: url(../assets/sign.png);
+    background-position: center;
+    background-size: cover;
+    height: 100px;
+    bottom: -50px;
+    position: absolute;
+    right: 27%;
+    width: 100px;
+}
+
+.home-page .home-main {
+    background-color: var(--mainColor);
+    padding: 50px 30px;
+    box-sizing: border-box;
+}
+
+.home-main button {
+    border: 1px solid var(--fontColor);
+    background-color: transparent;
+    padding: 7px 15px;
+    font-family: inherit;
+    text-transform: capitalize;
+    box-sizing: border-box;
+    border-radius: 20px;
+    display: flex;
+    height: fit-content;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 500;
+    width: fit-content;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+.home-main button span {
+    display: inline-flex;
+    font-size: 17px;
+    transform: rotate(320deg);
+    margin-left: 10px;
+}
+
+.home-main .about {
+    color: var(--fontColor);
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    padding: 90px 0;
+    gap: 50px;
+}
+
+.about .about-txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 40px;
+}
+.about-txt h1, .career-head h1, .events h1, .trademark-intro h1 {
+    font-size: 9vw;
+    font-weight: 800;
+    display: flex;
+    line-height: 90%;
+    justify-content: space-between;
+    align-items: start;
+}
+.about-txt h1 span, .career-head h1 span, .events h1 span, .trademark-intro h1 span {
+    font-size: 14px;
+    font-weight: 500;
+    display: inline-flex;
+    line-height: 100%;
+}
+.about-txt p, .career p {
+    font-size: 15px;
+    font-weight: 500;
+}
+.about-txt button, .career button {
+    align-self: flex-end;
+    margin-right: 60px;
+}
+.about-txt button:hover {
+    background-color: var(--fontColor);
+    color: var(--mainColor);
+}
+
+.about .about-img {
+    height: 500px;
+    position: relative;
+    display: grid;
+    grid-template-rows: 1fr;
+    position: relative;
+}
+.about-img .aboutbg {
+    background-image: url(../assets/brooke.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+.about-img .bg2 {
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    bottom: -100px;
+    left: -70px;
+}
+
+.home-main .career {
+    padding: 70px 0 50px 0;
+    color: var(--fontColor);
+}
+.career .career-intro {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+.career-intro button {
+    margin: 0;
+}
+.career .moments {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 25vw);
+}
+.moments .moment {
+    background-color: #131e2e45;
+    display: flex;
+    background-position: center;
+    background-size: cover;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 20px;
+    justify-content: space-between;
+}
+.mbox1 {
+    background-image: url(../assets/moment1.webp);
+}
+.moments .mbox2, .moments .mbox7 {
+    background-color: transparent;
+}
+.mbox3 {
+    background-image: url(../assets/moment3.jpg);
+}
+.mbox4 {
+    background-image: url(../assets/moment4.jpg);
+    transform: rotate(180deg);
+}
+.mbox5 {
+    background-image: url(../assets/moment5.jpg);
+}
+.mbox6 {
+    background-image: url(../assets/moment6.jpg);
+}
+.moments .mbox8 {
+    background-image: url(../assets/moment7.png);
+    background-position: top;
+}
+.moment p {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    font-size: 17px;
+}
+.moment p span {
+    font-size: 40px;
+    transform: rotate(320deg);
+}
+.moment h2 {
+    font-size: 30px;
+    font-weight: 900;
+}
+.home-main .events {
+    background-color: var(--fontColor);
+    margin: 0 -30px;
+    padding: 50px 0;
+    color: var(--mainColor);
+}
+.events h1 {
+    width: fit-content;
+    align-items: end;
+    margin: 0 auto;
+}
+.events h1 span {
+    margin-left: -35px;
+}
+.events .event-txt {
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 30px;
+    align-items: end;
+    text-align: right;
+    justify-content: space-between;
+}
+.events button {
+    height: fit-content;
+    border: 1px solid var(--mainColor);
+    color: inherit;
+    margin-bottom: 20px;
+}
+.events button:hover {
+    background-color: var(--mainColor);
+    color: var(--fontColor);
+}
+
+.events .partners {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+}
+.partners .partner {
+    height: 35vw;
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+.partner1 {
+    background-image: url(../assets/ping.jpg);
+}
+.partners .partner2 {
+    background-image: url(../assets/nike.png);
+    height: 40vw;
+}
+.partner3 {
+    background-image: url(../assets/wilson.jpg);
+}
+.partner .partner-logo {
+    background-position: center;
+    background-size: 13vw;
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
+    height: 100px;
+}
+.nike-logo {
+    background-image: url(../assets/nike.svg);
+}
+.partner .ping-logo {
+    background-image: url(../assets/ping.svg);
+}
+.wilson-logo {
+    background-image: url(../assets/wilson.png);
+}
+.events .indicators {
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+    margin-top: 80px;
+    justify-content: center;
+}
+.indicators li {
+    padding: 3px;
+    background-color: #8c8c8c;
+    display: flex;
+    border-radius: 100%;
+}
+.indicators .white {
+    background-color: #fff;
+}
+
+.home-main .trademark {
+    color: var(--fontColor);
+    padding: 70px 0 40px 0;
+}
+.trademark .trademark-intro {
+    width: 87%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 3fr .7fr;
+}
+.trademark-intro h1 {
+    align-items: center;
+}
+.trademark-intro button {
+    justify-self: end;
+}
+.trademark-intro button:hover {
+    background-color: var(--fontColor);
+    color: var(--mainColor);
+}
+.trademark .trademark-content {
+    display: grid;
+    gap: 80px;
+    grid-template-columns: 2fr 1.6fr;
+    width: 87%;
+    margin: 40px auto;
+    margin-top: 40px;
+}
+.trademark-content .trademark-txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-weight: 500;
+}
+.trademark-txt p:nth-child(1) {
+    text-align: right;
+}
+.trademark-txt p:nth-last-child(1) {
+    margin-bottom: 100px;
+}
+.trademark-content .trademark-img {
+    height: 500px;
+    position: relative;
+    display: grid;
+    grid-template-rows: 1fr;
+    position: relative;
+}
+.trademark-img .trdmk-bg {
+    background-image: url(../assets/brooke.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+.trademark-img .bg2 {
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    top: -70px;
+    right: -50px;
+}
+
+@media screen and (max-width: 850px) {
+    .hero .intro {
+        display: flex;
+        flex-direction: column;
+    }
+    .intro h1 {
+        font-size: 17vw;
+    }
+    .home-main .about {
+        gap: 30px;
+    }
+    .about .about-img {
+        grid-template-rows: 1fr 1fr;
+    }
+    .about-img .bg2 {
+        position: static;
+        width: 100%;
+        height: 100%;
+    }
+    .career .moments {
+        grid-template-rows: repeat(2, 27vw);
+    }
+    .home-main .events {
+        padding: 90px 0;
+    }
+    .events .event-txt {
+        flex-direction: column;
+        width: 100%;
+            padding: 0 30px;
+            box-sizing: border-box;
+    }
+    .events button {
+        align-self: flex-start;
+    }
+    .partners .partner {
+        height: 45vw;
+    }
+    .partners .partner2 {
+        height: 50vw;
+    }
+    .partner .partner-logo {
+        margin-bottom: 0;
+    }
+    .trademark .trademark-intro {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .trademark .trademark-content {
+        width: 100%;
+        gap: 40px;
+    }
+    .trademark-intro button {
+        align-self: flex-end;
+    }
+    .trademark-content .trademark-img {
+        grid-template-rows: 1fr 1fr;
+    }
+    .trademark-img .bg2 {
+        position: static;
+        width: 100%;
+        height: 100%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .home-main .about {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        padding: 40px 0;
+    }
+    .about .about-img {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 300px ;
+        height: fit-content;
+    }
+    .about-txt h1, .career-head h1, .events h1 {
+        flex-direction: column;
+        gap: 15px;
+        font-size: 12vw;
+    }
+    .about-txt h1 span, .career-head h1 span, .events h1 span{
+        font-size: 15px;
+    }
+    .about-txt button {
+        margin-right: 0;
+    }
+    .career .career-intro {
+        margin-top: 15px;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .career-intro br, 
+    .events .event-txt br, .trademark-txt br {
+        display: none;
+    }
+    .career .moments {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 40vw);
+    }
+    .events .partners {
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 30px;
+    }
+    .partners .partner {
+        height: 70vw;
+    }
+    .partners .partner2 {
+        grid-row: 2;
+        grid-column: 1/3;
+        background-position: center;
+        width: 100%;
+    }
+    .partner .partner-logo {
+        background-size: 20vw;
+    }
+    .trademark .trademark-content {
+        display: flex;
+        flex-direction: column;
+    }
+    .trademark-content .trademark-img {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 300px ;
+        height: fit-content;
+    }
+    .trademark-txt p:nth-last-child(1) {
+        margin: 70px 0 0 0;
+    }
+}

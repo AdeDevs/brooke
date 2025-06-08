@@ -2,9 +2,9 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Young+Serif&display=swap");
 
 :root {
-    --mainColor: #ff622f;
+    --mainColor: #dae85e;
     --bgColor: #19a7dd;
-    --fontColor: #150804;
+    --fontColor: #131e2e;
     --textColor: #444444;
     --mainFont: "montserrat", sans-serif;
     --specialFont: "DM Serif Display", sans-serif;
@@ -17,6 +17,7 @@
 .logo {
     font-size: 25px;
     line-height: 100%;
+    color: var(--mainColor);
     font-family: var(--specialFont);
 }
 
@@ -28,12 +29,11 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: sticky;
+    position: absolute;
     top: 0;
     box-sizing: border-box;
     font-family: var(--mainFont), sans-serif;
     text-transform: capitalize;
-    border-bottom: 3px double var(--textColor);
     z-index: 1000;
 }
 
@@ -49,12 +49,19 @@
 
 .nav-bar .extras {
     gap: 5px;
+    color: var(--mainColor);
     display: flex;
     align-items: center;
 }
 
-.extras .tel {
+.extras .nike {
     font-size: 15px;
+    background-image: url(../assets/nike.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 25px;
+    width: 60px;
     display: flex;
 }
 
@@ -80,7 +87,7 @@
 
 .toggle {
     display: none;
-    width: 25px;
+    width: 30px;
     height: fit-content;
     flex-direction: column;
     justify-content: center;
@@ -92,9 +99,9 @@
 
 .toggle span {
     display: block;
-    background-color: black;
+    background-color: var(--mainColor);
     width: 100%;
-    height: 1px;
+    height: 2px;
     transition: all .1s ease-in-out;
     z-index: 1001;
 }
@@ -107,19 +114,20 @@
 .toggle.show .first {
     rotate: 45deg;
     position: absolute;
-    background-color: #1c1c1d;
+    background-color: var(--mainColor);
     top: 0;
 }
 
 .toggle.show .second {
     position: absolute;
-    background-color: #1c1c1d;
+    background-color: var(--mainColor);
     rotate: -50deg;
     top: 0;
 }
 
 .mobile-nav {
-    background-color: var(--bgColor);
+    background-color: #19a6ddbb;
+    backdrop-filter: blur(5px);
     height: 100vh;
     width: 100%;
     position: fixed;
@@ -127,6 +135,7 @@
     list-style-type: none;
     flex-direction: column;
     gap: 10px;
+    box-sizing: border-box;
     align-items: center;
     justify-content: center;
     font-size: 17px;
@@ -144,11 +153,11 @@
 }
 
 .mobile-nav.show a.active {
-    color: #1c1c1d;
+    color: #fff;
 }
 
 .mobile-nav a {
-    color: #6e716f;
+    color: #dddddd;
     transition: all .3s ease-in-out;
 }
 
@@ -158,7 +167,10 @@
     }
 
     .nav-bar {
-        padding: 20px 30px;
+        padding: 35px 30px;
+        position: sticky;
+        background-color: #19a6ddbb;
+        backdrop-filter: blur(10px);
     }
 
     .nav-bar .desk-nav,

@@ -23,7 +23,7 @@ export default function NavBar() {
                 <li><a href="#contact">contact <br /> me</a></li>
             </ul>
             <ul className="desk-nav extras">
-                <li>Nike</li>
+                <li className="nike"></li>
             <div className={`toggle ${showMenu ? "show" : ""}`} onClick={toggleMenu}>
                 <span className={`first`}></span>
                 <span className={`second`}></span>
@@ -33,7 +33,7 @@ export default function NavBar() {
                 <li onClick={toggleMenu}><NavLink to="/">about me</NavLink></li>
                 <li onClick={toggleMenu}><a href="#about">highlight career</a></li>
                 <li onClick={toggleMenu}><a href="#services">Partner & events</a></li>
-                <li onClick={toggleMenu}><a href="#contact">contact <br /> me</a></li>
+                <li onClick={toggleMenu}><a href="#contact">contact me</a></li>
             </ul>
         </div>
     )
