@@ -466,6 +466,9 @@
     }
 }
 @media screen and (max-width: 600px) {
+    .home-page .hero {
+        padding: 50px 30px;
+    }
     .home-main .about {
         display: flex;
         flex-direction: column;
