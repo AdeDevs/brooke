@@ -12,12 +12,13 @@
     padding: 100px 30px 80px 30px;
     background-repeat: no-repeat;
     position: relative;
-    
 }
 
 .hero .intro {
     display: grid;
-    grid-template-columns: 1fr 5fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    overflow: hidden;
 }
 
 .intro .brooke {
@@ -25,12 +26,22 @@
     background-image: url(../assets/brooke.jpeg);
     background-position: center;
     background-size: cover;
-    height: 340px;
+    height: 300px;
     width: 250px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: end;
+    grid-row: 1;
+    grid-column: 1;
+    z-index: 800;
+}
+.intro .golf {
+    grid-row: 1;
+    background-image: url(../assets/nike.png);
+    transform: rotate(30deg);
+    margin: 0 0 0 60px;
+    z-index: 799;
 }
 
 .brooke h2 {
@@ -51,6 +62,7 @@
     text-transform: uppercase;
     font-weight: 800;
     text-align: right;
+    z-index: 810;
 }
 
 .hero .hero-extra {
@@ -95,7 +107,7 @@
 
 .home-page .home-main {
     background-color: var(--mainColor);
-    padding: 50px 30px;
+    padding: 50px 30px 0 30px;
     box-sizing: border-box;
 }
 
@@ -173,11 +185,12 @@
     position: relative;
 }
 .about-img .aboutbg {
-    background-image: url(../assets/brooke.jpeg);
+    background-image: url(../assets/golf-who.jpg);
     background-position: center;
     background-size: cover;
 }
 .about-img .bg2 {
+    background-image: url(../assets/brooke.jpeg);
     position: absolute;
     height: 200px;
     width: 200px;
@@ -389,23 +402,75 @@
     position: relative;
 }
 .trademark-img .trdmk-bg {
-    background-image: url(../assets/brooke.jpeg);
-    background-position: center;
+    background-image: url(../assets/trademark.jpg);
+    background-position: top;
     background-size: cover;
 }
 .trademark-img .bg2 {
     position: absolute;
     height: 150px;
+    background-image: url(../assets/brooke.jpeg);
+    background-position: center;
     width: 150px;
     top: -70px;
     right: -50px;
 }
 
+footer .footer-main {
+    background-image: url(../assets/footer-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    gap: 300px;
+}
+
+.footer-main h1, .last h1 {
+    font-size: 10vw;
+    margin-top: 100px;
+    font-weight: 800;
+    line-height: 90%;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--mainColor);
+}
+.footer-main .foot-nav {
+    width: 100%;
+    gap: 10px;
+    padding: 20px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    text-transform: capitalize;
+}
+
+.footer-main .foot-nav .desk-nav {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    gap: 30px;
+    font-size: 12px;
+    color: #fff;
+    font-weight: 500;
+}
+.last {
+    background-color: var(--mainColor);
+    width: 100%;
+    box-sizing: border-box;
+    padding-top: 50px;
+    overflow: hidden;
+    line-height: 200%;
+}
+.last h1 {
+    line-height: 73%;
+    font-size: 10vw;
+    text-transform: capitalize;
+    margin: 0;
+    color: var(--fontColor);
+}
+
 @media screen and (max-width: 850px) {
-    .hero .intro {
-        display: flex;
-        flex-direction: column;
-    }
     .intro h1 {
         font-size: 17vw;
     }
@@ -467,6 +532,17 @@
     }
 }
 @media screen and (max-width: 600px) {
+    .hero .intro {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .intro .golf {
+        display: none;
+    }
+    .intro h1 {
+        font-size: 15vw;
+    }
     .home-page .hero {
         padding: 50px 30px;
     }
@@ -481,7 +557,7 @@
         grid-template-rows: 300px ;
         height: fit-content;
     }
-    .about-txt h1, .career-head h1, .events h1 {
+    .about-txt h1, .career-head h1, .events h1, .footer-main h1, .trademark-intro h1 {
         flex-direction: column;
         gap: 15px;
         font-size: 12vw;
@@ -532,5 +608,23 @@
     }
     .trademark-txt p:nth-last-child(1) {
         margin: 70px 0 0 0;
+    }
+    .footer-main .foot-nav {
+        padding: 30px 30px;
+    }
+    .footer-main .foot-nav .desk-nav {
+        display: none;
+    }
+    .footer-main .foot-nav .extras {
+        display: flex;
+    }
+    .last j1 {
+        font-size: 11vw;
+    }
+    .trademark-intro h1 {
+        align-items: stretch;
+    }
+    .trademark h1 span {
+        align-self: flex-end;
     }
 }

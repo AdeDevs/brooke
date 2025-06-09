@@ -1,9 +1,14 @@
+import { NavLink } from "react-router-dom"
+
 export default function HomePage() {
     return (
         <div className="home-page">
             <header className="hero">
                 <div className="intro">
                     <div className="brooke">
+                        <h2>Brooke Eagleeye <br /> <span>WGC Champoins 2025</span></h2>
+                    </div>
+                    <div className="brooke golf">
                         <h2>Brooke Eagleeye <br /> <span>WGC Champoins 2025</span></h2>
                     </div>
                     <h1>golf <br /> journey</h1>
@@ -107,6 +112,26 @@ export default function HomePage() {
                     </div>
                 </section>
             </main>
+            <footer>
+                <section className="footer-main">
+                    <h1>contact <br /> me</h1>
+                    <div className="foot-nav">
+                        <NavLink to="/"><h2 className="logo">be</h2></NavLink>
+                        <ul className="desk-nav">
+                            <li><NavLink to="/">about <br /> me</NavLink></li>
+                            <li><a href="#about">highlight <br /> career</a></li>
+                            <li><a href="#services">Partner & <br /> events</a></li>
+                            <li><a href="#contact">contact <br /> me</a></li>
+                        </ul>
+                        <ul className="desk-nav extras">
+                            <li className="nike"></li>
+                        </ul>
+                    </div>
+                </section>
+                <section className="last">
+                    <h1>Brooke Eagleeye</h1>
+                </section>
+            </footer>
         </div>
     )
 }
